@@ -125,6 +125,6 @@ pred_total<- i*(average_change + (i * average_change_in_change)) + running_total
 
 #for(j in 0:i){
 ##pred_change<-average_change + (j * average_change_in_change)
-pred_total<-running_total[length(running_total)] + pred_change 
+#pred_total<-running_total[length(running_total)] + pred_change 
 
-paste("Total cases after",i,"days","are",pred_total)
+paste("Total cases after",i,"days","are",ceiling(pred_total)
